@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Moon 🌙</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#0b1a3a, #132d58, #1c447a);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent url('https://i.imgur.com/2x6fZ1P.png') repeat;
+    animation: moveStars 200s linear infinite;
+  }
+
+  @keyframes moveStars {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 10000px;}
+  }
+
+  .moon {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle at 30% 30%, #fff, #bbb);
+    border-radius: 50%;
+    box-shadow: 0 0 40px #fff8, 0 0 80px #fff6;
+    animation: float 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    from {transform: translateY(0);}
+    to {transform: translateY(15px);}
+  }
+
+  h1 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    width: 80%;
+    max-width: 700px;
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 6s ease forwards 2s;
+  }
+
+  @keyframes fadeIn {
+    to {opacity: 1;}
+  }
+
+  .signature {
+    margin-top: 30px;
+    font-size: 1.3em;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeIn 8s ease forwards 4s;
+  }
+
+  audio {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+<div class="moon"></div>
+
+<h1>✨ Happy Birthday My Love ✨</h1>
+
+<p>
+To the one who owns my heart,  
+Happy Birthday, my love 💙  
+You are the moon that lights my nights,  
+and the warmth that lives in my soul.  
+Even miles apart, your presence fills my world with peace and meaning.  
+You are my forever, my calm, and my chaos — all at once.  
+May your new year bring endless happiness, love, and light.  
+You’ll always be my sun, and I’ll forever be your moon. 🌙  
+</p>
+
+<div class="signature">From your soulmate, Tuqa 💫</div>
+
+<audio autoplay loop>
+  <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
